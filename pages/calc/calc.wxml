@@ -1,0 +1,12 @@
+<view>
+  <view>
+    <input placeholder='被加数' bindinput='added'></input>
+    <input placeholder='加数' bindinput='add'></input>
+  </view>
+  <view>
+    <button type='primary' bindtap='click'>计算</button>
+  </view>
+  <view>
+    <input disabled='true' value='{{result}}'></input>
+  </view>
+</view>

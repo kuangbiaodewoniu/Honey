@@ -8,4 +8,21 @@
   <view class="content">
     <text>{{user.age}}</text>
   </view>
+  <view wx:if="{{user.age>10}}">大孩子</view>
+  <view wx:if="{{user.age<=10}}">小孩小孩</view>
+  <block wx:if="{{user.age>12}}">
+    <view>hi,bb</view>
+    <view>hi,cc</view>
+  </block>
+
+  <view wx:for="{{users}}">
+  <text>{{index+1}}-{{item.name}}-{{item.age}}</text>
+  </view>
+  <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item ="i">
+    <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item ="j">
+      <view wx:if="{{j<=i}}">
+        {{i}}*{{j}}={{i*j}}
+      </view>
+    </view>
+  </view>
 </view>
