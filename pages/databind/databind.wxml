@@ -1,0 +1,11 @@
+<view class='container'>
+  <view class='content'>
+    <text>{{content}}</text>
+  </view>
+  <view class="content">
+    <text>{{user.name}}</text>
+  </view>
+  <view class="content">
+    <text>{{user.age}}</text>
+  </view>
+</view>
